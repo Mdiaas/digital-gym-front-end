@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from "src/app/digital-gym.png" 
 export default function Home() {
   return (
@@ -60,10 +61,10 @@ export default function Home() {
                   Login
                 </button>
                 <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
-                  <a
-                    href="#!"
+                  <Link
+                    href="/register"
                     className="text-danger transition duration-150 ease-in-out hover:text-orange-700 focus:text-danger-600 active:text-danger-700"
-                    >Register</a>
+                    >Register</Link>
                 </p>
               </div>
             </form>

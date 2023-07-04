@@ -5,33 +5,21 @@ export default function Register() {
   return (
     <>
       <Header />
-      <main className='h-screen'>
-        <div className="flex flex-col">
-          <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-              <div className="overflow-hidden">
-                <table className="text-center text-sm font-light">
-                  <thead
-                    className="border-b bg-neutral-800 font-medium text-white dark:border-neutral-500 dark:bg-neutral-900">
-                    <tr>
-                      <th scope="col" className=" px-6 py-4">Aula</th>
-                      <th scope="col" className=" px-6 py-4">#</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b dark:border-neutral-500">
-                      <td className="whitespace-nowrap  px-6 py-4 font-medium">Musculação</td>
-                      <td className="whitespace-nowrap  px-6 py-4">
-                        <button>Assistir aula</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+      <div className=' h-screen flex flex-col gap-4 justify-center items-center'>
+          <div className="rounded-xl w-1/2 grid grid-cols-12 bg-orange-700 shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform">
+            <div className="col-span-12 md:col-span-1">
+            </div>
+            <div className="col-span-11 xl:-ml-5">
+              <p className="text-black font-semibold"> Aula de musculação </p>
+            </div>
+            <div className="md:col-start-2 col-span-11 xl:-ml-5">
+              <p className="text-sm text-gray-200"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum qui necessitatibus fugit natus eum repellendus perferendis quis magni quas nisi voluptatum cumque commodi, architecto ut magnam amet pariatur accusantium id. </p>
+            </div>
+            <div className='col-span-12 text-end'>
+              <button type="button" className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Assistir aula</button>
             </div>
           </div>
-        </div>
-      </main>
+      </div>
     </>
   )
 }
